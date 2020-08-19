@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_29efbe41-6445-49af-8bab-148598f27e24" entityID="SAMLSurgeryIDP" validUntil="2024-08-11T20:31:57.708Z">
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIDbTCCAlWgAwIBAgIEXImjHTANBgkqhkiG9w0BAQsFADBnMQ0wCwYDVQQGEwRMaW1hMQ0wCwYD
+                        VQQIEwRMaW1hMQ0wCwYDVQQHEwRMaW1hMQwwCgYDVQQKEwNJRE0xETAPBgNVBAsTCE1vdmlzdGFy
+                        MRcwFQYDVQQDEw5TQU1MU3VyZ2VyeUlEUDAeFw0yMDA4MTEyMDAyMDRaFw0yNDA4MTAyMDAyMDRa
+                        MGcxDTALBgNVBAYTBExpbWExDTALBgNVBAgTBExpbWExDTALBgNVBAcTBExpbWExDDAKBgNVBAoT
+                        A0lETTERMA8GA1UECxMITW92aXN0YXIxFzAVBgNVBAMTDlNBTUxTdXJnZXJ5SURQMIIBIjANBgkq
+                        hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAggQWRX6LG4Rv4dj4bob4oua88GcPdwPwWfKyfClM0Ijz
+                        oEeP42aBIGxwV6cFMO0eIjoEKaKoNqE9AnYOwYP2HIpN/CHBJYTP3ZFmNzmqpKIAr95TVExHKVXm
+                        dJd5GnlOoKWBWrgM6SKfbiYFUNgRIGmBO6W2YWOXtbA47tunJLeq1yx9i6IpVAbm2qH1G+zKw/WG
+                        1aIi8m+GoW0kwIZaPxgqkBTGbdmN+leQTbny3R9gtpkNDt5hA2kU3L9CynXCJ6cmlNK7X81QY7T3
+                        M6o0rqFgCQKWE6QJndidLOHvn5fm6oHoRxZZi46x961QRVZOKi5BJmxXluiQgmj1LsoEfwIDAQAB
+                        oyEwHzAdBgNVHQ4EFgQUEEGV7as2wavoTBXhBaMf1F1s/+EwDQYJKoZIhvcNAQELBQADggEBABec
+                        Dm01QLwiFLsrTZm0S+UgpFaI+7b3J3t7ZtEWo6zpPAKjGy+Rd0AYs71BtAho1fNqZxNRiaCqJwY9
+                        kQYDNAyJdOQSTQNJPw2WykGvxj8tvZ/Kr/xLcmOXcPVMLU1hQaQG9muiCyGYiyM3eq36Fhwc454Q
+                        1+6wHy8EC6hjuPY2dh31+WC/mR8BQdZF9U6sK8cuesbYUW289nfcwC3RZGKV+L6IOE//dePs4pAS
+                        UxzShXmNLjUrhNKgxR9BYWPOGIYEX9mg6qtCEiD69b9/0z44/9LCQ6RysCSUkpc1pUL+u8vu+EyO
+                        MtQXow9obLXolxs7t4y5gzLAcvE6WktIO3w=</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://identity-des.mimovistar.com.pe:24443/SAMLSurgery/api/sso"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://identity-des.mimovistar.com.pe:24443/SAMLSurgery/api/sso" ResponseLocation="https://identity-des.mimovistar.com.pe:24443/SAMLSurgery/api/sso"/>
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" validUntil="2020-06-17T15:30:07Z" cacheDuration="PT1592839807S" entityID="SAMLSurgery">
+    <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAPl71ETHSQnyGo5AOmjtTY//KbFU6Mt6DHW8ECCFeERX+pHIPHoar9rmaa6Z8QnL1YVMUAAjGLymVostmpAUL1DRLEVzm6MwCGjyksUOAOeN2GhZ+J/yCe6o38/SYPTe6DkBKbce5Z/pPfcjcXVO3KaV2MU5huB5dN/I9QQ1e1QjAgMBAAECgYEAuOjctXV3XxXANPrJ0AdCW53livfB6z40ifavhUsnjpAeuXpNyLqK6JWqcqzKiFY5laiwCsn4hapLrrBIRM2RGsCp/F+0WT+qcj4RsvqQtuKJ/162oj8SH0Wivy8hgbpJ1YE3iMEmeEOZPYUesJjQzNKJ9Y0EeoE4jyYirrMcBnECQQD/M7dJMcMPUatL9SImfhrepgjDAXOcCUJUydOrZuE/TFF3jDC+AalWvtevehZ5sg1RKOn5ljU2MObYM0kihdW/AkEA+kOJK8pkEz6ZbjlIvQ4Qqiy+xIsK3vyPfZhAjQxvEzBu8oVIGdRohsne/BOBPWffi8zlN06kINr2/1ByQrRCnQJBAMIp0LtpluTi2Bc0bEUpELxxSp1DT3haOxNTcy4nWhzUre7sxHDrxrDvBh7GHq98XlFvdYSlWdrfHeNEMdKITPUCQDSqwdNVZHooUmG/7G7c5uTpRbxXBpKm1Au6XttQIpAHQVIIeoP1D4pOMX8bG7ewhHsHQ7W/9wpzCkfwxhsDlIECQQDfTu9I1iANYsX33N94QCEHskbJL1tW5CLG6mNhOMyQjBqaSR+dR9hu4w1oBTlj01HyaIcyq1xjdoqqCP8g5cPQ</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="encryption">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAPl71ETHSQnyGo5AOmjtTY//KbFU6Mt6DHW8ECCFeERX+pHIPHoar9rmaa6Z8QnL1YVMUAAjGLymVostmpAUL1DRLEVzm6MwCGjyksUOAOeN2GhZ+J/yCe6o38/SYPTe6DkBKbce5Z/pPfcjcXVO3KaV2MU5huB5dN/I9QQ1e1QjAgMBAAECgYEAuOjctXV3XxXANPrJ0AdCW53livfB6z40ifavhUsnjpAeuXpNyLqK6JWqcqzKiFY5laiwCsn4hapLrrBIRM2RGsCp/F+0WT+qcj4RsvqQtuKJ/162oj8SH0Wivy8hgbpJ1YE3iMEmeEOZPYUesJjQzNKJ9Y0EeoE4jyYirrMcBnECQQD/M7dJMcMPUatL9SImfhrepgjDAXOcCUJUydOrZuE/TFF3jDC+AalWvtevehZ5sg1RKOn5ljU2MObYM0kihdW/AkEA+kOJK8pkEz6ZbjlIvQ4Qqiy+xIsK3vyPfZhAjQxvEzBu8oVIGdRohsne/BOBPWffi8zlN06kINr2/1ByQrRCnQJBAMIp0LtpluTi2Bc0bEUpELxxSp1DT3haOxNTcy4nWhzUre7sxHDrxrDvBh7GHq98XlFvdYSlWdrfHeNEMdKITPUCQDSqwdNVZHooUmG/7G7c5uTpRbxXBpKm1Au6XttQIpAHQVIIeoP1D4pOMX8bG7ewhHsHQ7W/9wpzCkfwxhsDlIECQQDfTu9I1iANYsX33N94QCEHskbJL1tW5CLG6mNhOMyQjBqaSR+dR9hu4w1oBTlj01HyaIcyq1xjdoqqCP8g5cPQ</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://identity-des.mimovistar.com.pe:24443/SAMLSurgery/api/sso"/>
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>

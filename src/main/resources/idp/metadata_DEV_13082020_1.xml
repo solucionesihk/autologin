@@ -1,0 +1,14 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_0ead6283-a175-479b-9e2d-cfb744de5035" entityID="SAMLSurgeryIDP" validUntil="2024-08-13T18:43:50.196Z">
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIDYzCCAkugAwIBAgIEGjT74jANBgkqhkiG9w0BAQsFADBiMQ0wCwYDVQQGEwRsaW1hMQ0wCwYD VQQIEwRMaW1hMQ0wCwYDVQQHEwRMaW1hMQwwCgYDVQQKEwNURFAxDDAKBgNVBAsTA1REUDEXMBUG A1UEAxMOQXBwQ29udmVyZ2VudGUwHhcNMjAwODAzMTQzMDI2WhcNMjIwODAzMTQzMDI2WjBiMQ0w CwYDVQQGEwRsaW1hMQ0wCwYDVQQIEwRMaW1hMQ0wCwYDVQQHEwRMaW1hMQwwCgYDVQQKEwNURFAx DDAKBgNVBAsTA1REUDEXMBUGA1UEAxMOQXBwQ29udmVyZ2VudGUwggEiMA0GCSqGSIb3DQEBAQUA A4IBDwAwggEKAoIBAQCfm8hxHyiT9GU8z0TgMcYUNjzmeEc5qbSB2wc4FQ3a2eChQ9LdBK/b3Gpd QVoPw8rT+2Swi2cVr8uDtRTQEOV6qrMHvza+UC6G+zd7n5s2GM4MwQxdxiVaQxiS7bG+kBUl+IZ9 p7nmDQgy3YzsSVMYq3IpZ42WPBD04Ffh2TfosT+f7dHSqbkMh/NCvFgdsNYIVgX+r0I5uasU9d37 XwDyArPs2zv22KrjbD8T6gIgV1JLe1CcqFJck+6vfcaq4B3Jo8Vj5F8DgI1bk4mPrMCeclWOSRpL R6suVk6V006byo4DmmltWauZJKqTE+PZCt8XI/0TOpgDdA0Qre00DCwVAgMBAAGjITAfMB0GA1Ud DgQWBBR+MxxIPIo3RUS2C0g7b+cbAOx9HzANBgkqhkiG9w0BAQsFAAOCAQEAaHGRGK+ifEMWOce+ 4y0ukTroTKeZhVu3sPvHsIc4sm5H3xm1SnAeWQRmfXiTZWuI0Kj/siwY3JnUVkCCgJzu+K0JisXw y6oQ90brcmqUW5QXjFBGeMzC9TzjCFC0GgRRY11ov6rk18K0e1PnPZ3/JQsxUktPWNZxfx+q3noL D+n4/5vEEt6osfLKSerUUuRCQAG514+f1KpAE2fruWuzsMQ15nSsGYbcS5ZfDaIx8+AQZ8nODl3N T/V+++qkfvuhUf5X2VE+KzND2pR6Fl60H5I2fkSDcCPQO5PgMyhiMMcu0QWAxqTIXVKvWJSo9mQP OomLl3gtTfDeRps64hoQyg==</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://identity-des.mimovistar.com.pe:24443/SAMLSurgery/sso"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://identity-des.mimovistar.com.pe:24443/SAMLSurgery/sso" ResponseLocation="https://identity-des.mimovistar.com.pe:24443/SAMLSurgery/sso"/>
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>

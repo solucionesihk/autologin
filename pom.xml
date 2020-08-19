@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>springboot-sso</name>
+    <description>Springboot for SSO using SAML integration</description>
+
+    <groupId>com.tdp.appconvergente.web</groupId>
+    <artifactId>saml</artifactId>
+    <version>1.1</version>
+    <packaging>war</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.2.RELEASE</version>
+    </parent>
+
+    <dependencies>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security.extensions</groupId>
+            <artifactId>spring-security-saml2-core</artifactId>
+            <version>1.0.10.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security.extensions</groupId>
+            <artifactId>spring-security-saml-dsl-core</artifactId>
+            <version>1.0.5.RELEASE</version>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>org.opensaml</groupId>
+            <artifactId>opensaml-core</artifactId>
+            <version>3.4.5</version>
+            <scope>runtime</scope>
+        </dependency>!-->
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>org.opensaml</groupId>
+            <artifactId>opensaml-saml-impl</artifactId>
+            <version>3.4.5</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opensaml</groupId>
+            <artifactId>opensaml-saml-api</artifactId>
+            <version>3.4.5</version>
+            <scope>runtime</scope>
+        </dependency>!-->
+        
+        <dependency>
+            <groupId>org.opensaml</groupId>
+            <artifactId>opensaml</artifactId>
+            <version>2.6.4</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>**/*.jks</exclude>
+                </excludes>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>**/*.jks</include>
+                </includes>
+            </resource>
+
+        </resources>
+
+    </build>
+
+    <profiles>
+        <profile>
+            <id>embed-Tomcat</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-Tomcat</artifactId>
+                    <scope>compile</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+
+
+</project>

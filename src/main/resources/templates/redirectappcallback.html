@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TDP App Call Back</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+
+        <script th:inline="javascript">
+            window.onload = function () {
+                parent.postMessage('[[${codeTypeValue}]];' + [[${authCode}]], '*');
+            };
+        </script>
+
+    </head>
+    <body>
+        <div id="AnimationContainer">
+            <!--<img src="../static/img/loader-1.gif" th:src="@{img/loader-1.gif}"/>-->
+        </div>
+        <script type="text/javascript" th:src="@{/js/lib/lottie.js}"></script>
+        <script type="text/javascript" th:src="@{/js/script.js}"></script>
+    </body>
+</html>

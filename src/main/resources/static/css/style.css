@@ -1,0 +1,22 @@
+#AnimationContainer {
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {background-color: #808080;}
+
+#gif {
+    position: absolute;
+    cursor: pointer;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
